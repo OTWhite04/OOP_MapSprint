@@ -24,7 +24,7 @@ namespace OOP_MapSystemSprint_Owen
         public List<TileBase> TileMap;
 
 
-        private string levelPath = $"Content/Components/Level1.txt";
+        private string levelPath = $"Content/Level1.txt";
         Vector2 Cellposition;
 
         //declaring a character array and passing parameters into it.

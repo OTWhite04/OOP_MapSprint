@@ -37,6 +37,7 @@ namespace OOP_MapSystemSprint_Owen
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
             texture = Content.Load<Texture2D>("tile_0134");
+            
             // TODO: use this.Content to load your game content here
         }
 

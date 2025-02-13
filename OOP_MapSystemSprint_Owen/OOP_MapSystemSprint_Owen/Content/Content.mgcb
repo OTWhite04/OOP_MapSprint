@@ -13,6 +13,9 @@
 
 #---------------------------------- Content ---------------------------------#
 
+#begin Level1.txt
+/copy:Level1.txt
+
 #begin tile_0000.png
 /importer:TextureImporter
 /processor:TextureProcessor
