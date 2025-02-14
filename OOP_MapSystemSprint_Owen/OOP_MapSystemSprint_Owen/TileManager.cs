@@ -7,6 +7,10 @@ using System.Threading.Tasks;
 
 namespace OOP_MapSystemSprint_Owen
 {
+    /// <summary>
+    /// Script that manages the different tiles in the game,
+    /// currently just manages the walls and ground.
+    /// </summary>
     //Class for managing all the tiles on the map.
     public static class TileManager
     {

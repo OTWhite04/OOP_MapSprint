@@ -8,6 +8,10 @@ using System.Threading.Tasks;
 
 namespace OOP_MapSystemSprint_Owen
 {
+    /// <summary>
+    /// The game entity script for creating the player 
+    /// and later for creating the enemies as of writing this.
+    /// </summary>
     internal class GameEntity
     {
         private Vector2 position;

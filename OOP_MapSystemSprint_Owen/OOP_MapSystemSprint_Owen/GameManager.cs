@@ -2,8 +2,13 @@
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
+
 namespace OOP_MapSystemSprint_Owen
 {
+    /// <summary>
+    /// The game manager for the tilemap sprint, initializes the window size
+    ///and draws the player onto the screen.
+    /// </summary>
     public class GameManager : Game
     {
         private GraphicsDeviceManager _graphics;

@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 
 namespace OOP_MapSystemSprint_Owen
 {
+    /// <summary>
+    /// The player script for controlling the players movements, connected to game entity script.
+    /// </summary>
     internal class Player : GameEntity
     {
         private Texture2D texture;
