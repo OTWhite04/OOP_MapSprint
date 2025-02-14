@@ -11,6 +11,7 @@ namespace OOP_MapSystemSprint_Owen
 {
     /// <summary>
     /// The player script for controlling the players movements, connected to game entity script.
+    /// uses basic wasd movement to keep it simple.
     /// </summary>
     internal class Player : GameEntity
     {

@@ -12,7 +12,7 @@ namespace OOP_MapSystemSprint_Owen
 {
     /// <summary>
     /// The script for reading symbols from a text file and turning them into a tilemap,
-    /// and generates the string of the map.
+    /// and generates the string of the map to keep it simple.
     /// </summary>
     internal class Tilemap
     {
