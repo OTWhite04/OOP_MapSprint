@@ -7,7 +7,6 @@ namespace OOP_MapSystemSprint_Owen
     public class GameManager : Game
     {
         private GraphicsDeviceManager _graphics;
-        //private Player player;
         private SpriteBatch _spriteBatch;
         private Texture2D texture;
 
@@ -15,7 +14,7 @@ namespace OOP_MapSystemSprint_Owen
         public SpriteBatch SpriteBatch { get { return _spriteBatch; } }
 
        
-
+        //Constructor for the game manager.
         public GameManager()
         {
             _graphics = new GraphicsDeviceManager(this);
@@ -24,6 +23,7 @@ namespace OOP_MapSystemSprint_Owen
 
         }
 
+        //Method for initializing the game.
         protected override void Initialize()
         {
            
@@ -33,6 +33,7 @@ namespace OOP_MapSystemSprint_Owen
             base.Initialize();
         }
 
+        //Method for loading the content into the game
         protected override void LoadContent()
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
@@ -51,13 +52,14 @@ namespace OOP_MapSystemSprint_Owen
             base.Update(gameTime);
         }
 
+        //Draw method for drawing the player sprite.
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
             _spriteBatch.Begin(samplerState: SamplerState.PointClamp);
 
-            _spriteBatch.Draw(texture, new Rectangle(10, 10, 15, 15), Color.White);
+            _spriteBatch.Draw(texture, new Rectangle(16, 16, 16, 16), Color.White);
             // TODO: Add your drawing code here
 
             _spriteBatch.End();

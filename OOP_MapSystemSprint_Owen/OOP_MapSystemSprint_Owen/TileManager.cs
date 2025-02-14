@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace OOP_MapSystemSprint_Owen
 {
+    //Class for managing all the tiles on the map.
     public static class TileManager
     {
         public static Texture2D groundTexture;

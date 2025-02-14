@@ -12,10 +12,11 @@ namespace OOP_MapSystemSprint_Owen
 {
     internal class Tilemap
     {
+        //Integers for the map width and height.
         int mapHeight;
         int mapWidth;
 
-
+        
         public TileBase Wall;
         public TileBase Ground;
 
@@ -36,6 +37,7 @@ namespace OOP_MapSystemSprint_Owen
         int height;
         char[,] Map;
 
+        //Tilemap constructor.
         public Tilemap()
         {
             TileMap = new List<TileBase>();
@@ -55,7 +57,7 @@ namespace OOP_MapSystemSprint_Owen
                 //runs for every iteration of the outer height loop.
                 for (int x = 0; x < width; x++)
                 {
-                    //Assigns and draws the ground with its character in the console.
+                    
                     Map[x, y] = ground;
 
                     //conditional statement/rule that generates walls around the border of the play area.
@@ -64,9 +66,6 @@ namespace OOP_MapSystemSprint_Owen
                         //Assigns and draws the wall characters around the borders of the ground.
                         Map[x, y] = walls;
                     }
-
-
-
 
                 }
 
@@ -122,7 +121,7 @@ namespace OOP_MapSystemSprint_Owen
         public char[,] LoadPremadeMap(string MyPath)
         {
 
-            //Allows the text file to be read in Unity.
+            //Allows the text file to be read.
             string[] myLines = File.ReadAllLines(MyPath);
 
             //Looping through an array giving the length and width of the map to the text file.
@@ -142,6 +141,7 @@ namespace OOP_MapSystemSprint_Owen
 
     }
 
+    //Class for the tilebase that can be inherited from the map tiles.
     public abstract class TileBase
     {
         public TileBase(Texture2D texture)
